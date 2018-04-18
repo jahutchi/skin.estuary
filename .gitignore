@@ -8,6 +8,5 @@ Thumbs.db
 *.sublime-project
 *.sublime-workspace
 *.DS_Store
-*.sh
 1080i/Custom_Debug_Overlay.xml
 backgrounds/debuggrid1080.png
