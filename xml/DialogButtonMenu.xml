@@ -77,6 +77,10 @@
 						<onclick>InhibitIdleShutdown(false)</onclick>
 						<visible>System.HasShutdown + System.IsInhibit</visible>
 					</item>
+					<item>
+						<label>Restart Kodi</label>
+						<onclick>System.Exec("/storage/.config/scripts/restart-kodi.sh")</onclick>
+					</item>
 				</content>
 			</control>
 		</control>
