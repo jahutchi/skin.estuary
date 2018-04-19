@@ -409,6 +409,52 @@
 		<value condition="ListItem.HasTimerSchedule">icons/pvr/PVR-HasTimerSchedule.png</value>
 		<value condition="ListItem.HasTimer">icons/pvr/PVR-HasTimer.png</value>
 	</variable>
+
+  <!-- JAH: Added these variables so we can show different button tips & text in the EPG dependent on machine name -->
+  <variable name="BottomBarSkipBackButtonText">
+    <value condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">-12h</value>
+  </variable>
+  <variable name="BottomBarSkipForwardButtonText">
+    <value condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">+12h</value>
+  </variable>
+
+  <variable name="BottomBarColourButton1Text">
+    <value condition="Window.IsActive(TVGuide)">Radio Channels</value>
+    <value condition="Window.IsActive(RadioGuide)">TV Channels</value>
+    <value condition="Window.IsActive(TVRecordings) | Window.IsActive(TVTimers)">Delete</value>
+  </variable>
+  <variable name="BottomBarColourButton2Text">
+    <value condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">Search Guide</value>
+    <value condition="Window.IsActive(TVRecordings) | Window.IsActive(TVTimers)">Side Menu</value>
+  </variable>
+  <variable name="BottomBarColourButton3Text">
+    <value condition="Window.IsActive(TVGuide)">Channel Categories</value>
+    <value condition="Window.IsActive(TVRecordings) + String.Contains(Control.GetLabel(5),*)">Ungroup</value>
+    <value condition="Window.IsActive(TVRecordings)">Group</value>
+  </variable>
+  <variable name="BottomBarColourButton4Text">
+    <!-- JAH Make the text different for the Add/Delete Series Link -->
+    <value condition="Window.IsActive(TVGuide) + ListItem.HasRecording">Edit Series Link</value>
+    <value condition="Window.IsActive(TVGuide) + ListItem.HasTimerSchedule + !ListItem.IsRecording">Delete Series Link</value>
+    <value condition="Window.IsActive(TVGuide) + !ListItem.HasTimerSchedule + !ListItem.IsRecording">Add Series Link</value>
+    <value condition="Window.IsActive(TVRecordings)">Delete all watched</value>
+  </variable>
+  <variable name="BottomBarColourButton1Image">
+    <value condition="String.Contains(System.FriendlyName,MediaPC)">icons/pvr/red_button.png</value>
+    <value>icons/pvr/yellow_button.png</value>
+  </variable>
+  <variable name="BottomBarColourButton2Image">
+    <value condition="String.Contains(System.FriendlyName,MediaPC)">icons/pvr/green_button.png</value>
+    <value>icons/pvr/blue_button.png</value>
+  </variable>
+  <variable name="BottomBarColourButton3Image">
+    <value condition="String.Contains(System.FriendlyName,MediaPC)">icons/pvr/yellow_button.png</value>
+    <value>icons/pvr/green_button.png</value>
+  </variable>
+  <variable name="BottomBarColourButton4Image">
+    <value condition="String.Contains(System.FriendlyName,MediaPC)">icons/pvr/blue_button.png</value>
+    <value>icons/pvr/red_button.png</value>
+  </variable>
 	<variable name="VideoHWDecoder">
 		<value condition="Player.Process(videohwdecoder)">HW</value>
 		<value>SW</value>

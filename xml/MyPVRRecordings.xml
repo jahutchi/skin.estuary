@@ -14,7 +14,9 @@
 					<left>0</left>
 					<top>list_y_offset</top>
 					<right>778</right>
-					<bottom>list_y_offset</bottom>
+					<!-- Changed this so that left listing stops before my custom button tips -->
+					<!-- <bottom>list_y_offset</bottom>-->
+					<bottom>60</bottom>
 					<onleft>9000</onleft>
 					<onright>73</onright>
 					<onup>50</onup>
@@ -207,8 +209,10 @@
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRRecordingsVar]" />
 			</include>
-			<include content="BottomBar">
-				<param name="info_visible" value="true" />
+			<!-- JAH: Customised to use my custom bottom bar with button tips -->
+			<include content="BottomBarWithButtons">
+				<param name="buttons_right" value="900" />
+				<param name="buttons_top" value="65" />
 			</include>
 			<control type="group">
 				<depth>DepthBars</depth>
@@ -216,7 +220,8 @@
 				<width>820</width>
 				<include>OpenClose_Right</include>
 				<bottom>0</bottom>
-				<height>60</height>
+				<!-- JAH: Slightly altered the height so that this lines up better with the custom BottomBarWithButtons template -->
+				<height>45</height>
 				<control type="label">
 					<description>Disk usage text</description>
 					<width>550</width>
