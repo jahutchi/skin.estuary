@@ -189,6 +189,23 @@
 					<label>$LOCALIZE[19077]</label>
 					<visible>Window.IsActive(MyPVRTimers.xml)</visible>
 				</control>
+				<control type="label" id="6990">
+					<label>Extra Actions</label>
+					<include>MediaMenuLabelCommon</include>
+					<visible>System.HasAddon(script.tvheadend.apiutils) + [Control.IsVisible(6991) | Control.IsVisible(6992)]</visible>
+				</control>
+				<control type="button" id="6991">
+					<include>MediaMenuItemsCommon</include>
+					<label>Force EPG Rescan</label>
+					<onclick>RunScript(script.tvheadend.apiutils,refresh-epg)</onclick>
+					<visible>System.HasAddon(script.tvheadend.apiutils) + Window.IsActive(TVGuide)</visible>
+				</control>
+				<control type="button" id="6992">
+					<include>MediaMenuItemsCommon</include>
+					<label>Delete All Watched</label>
+					<onclick>RunScript(script.tvheadend.apiutils,delete-watched-recordings)</onclick>
+					<visible>System.HasAddon(script.tvheadend.apiutils) + Window.IsActive(TVRecordings)</visible>
+				</control>
 				<control type="group" id="141000">
 					<control type="grouplist" id="14100">
 						<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
