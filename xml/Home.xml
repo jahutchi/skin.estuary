@@ -601,7 +601,7 @@
 								<right>60</right>
 								<align>right</align>
 								<font>font14</font>
-								<label>$INFO[Weather.Conditions,, ∙ ]$INFO[Weather.Temperature]</label>
+                <label>$INFO[Weather.Conditions,, - ]$INFO[Weather.Temperature]</label>
 							</control>
 							<control type="grouplist">
 								<top>50</top>
