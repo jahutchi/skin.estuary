@@ -23,7 +23,8 @@
 				<width>461</width>
 				<height>461</height>
 				<aspectratio>keep</aspectratio>
-				<texture fallback="DefaultTVShows.png">$INFO[ListItem.Icon]</texture>
+				<!-- JAH: Altered to use NowPlayingPosterVar which now uses the Skin Helper Service PVR Images -->
+				<texture>$VAR[NowPlayingPosterVar]</texture>
 			</control>
 			<control type="group">
 				<top>230</top>
