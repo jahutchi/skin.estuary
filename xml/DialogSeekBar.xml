@@ -219,7 +219,7 @@
 				<aligny>center</aligny>
 				<visible>VideoPlayer.HasEpg</visible>
 			</control>
-			<control type="label">
+			<!--<control type="label">
 				<left>260</left>
 				<right>50</right>
 				<top>20</top>
@@ -228,6 +228,26 @@
 				<align>left</align>
 				<font>font36_title</font>
 				<aligny>center</aligny>
+			</control>-->
+			<control type="label">
+				<left>260</left>
+				<right>340</right>
+				<top>20</top>
+				<height>25</height>
+				<label>$INFO[VideoPlayer.Title]</label>
+				<align>left</align>
+				<font>font36_title</font>
+				<aligny>center</aligny>
+			</control>
+			<control type="label">
+				<width>300</width>
+				<right>20</right>
+				<top>20</top>
+				<height>25</height>
+				<label>[B][COLOR button_focus]$INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime][/COLOR][/B]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<visible>VideoPlayer.HasEpg</visible>
 			</control>
 			<control type="textbox">
 				<left>260</left>
