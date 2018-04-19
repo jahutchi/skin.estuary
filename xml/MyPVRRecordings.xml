@@ -48,7 +48,7 @@
 							<right>30</right>
 							<aligny>center</aligny>
 							<scroll>true</scroll>
-							<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<left>15</left>
@@ -74,7 +74,7 @@
 							<height>80</height>
 							<right>30</right>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<left>15</left>
@@ -147,12 +147,14 @@
 						<font>font36_title</font>
 						<label>$INFO[ListItem.Title]</label>
 					</control>
+					<!-- JAH: Hide Episode Name as this is same as plot on freeview/freesat
 					<control type="label">
 						<top>240</top>
 						<width>750</width>
 						<height>70</height>
 						<label>[I]$INFO[ListItem.EpisodeName][/I]</label>
 					</control>
+					-->
 					<control type="textbox">
 						<top>284</top>
 						<width>750</width>
