@@ -141,7 +141,8 @@
 				<include>OpenClose_Right</include>
 				<width>810</width>
 				<right>0</right>
-				<include content="ContentPanel">
+				<!--JAH Changed to use my new ContentPanelSemiTransparent Include so that the Fanart can be seen -->
+				<include content="ContentPanelSemiTransparent">
 					<param name="left" value="-72" />
 					<param name="width" value="970" />
 					<param name="top" value="-20" />
