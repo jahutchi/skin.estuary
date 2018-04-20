@@ -199,7 +199,7 @@
 			</control>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRGuideVar]" />
-				<param name="sublabel" value="" />
+				<param name="sublabel" value="$INFO[ListItem.ChannelName]" />
 			</include>
 			<!-- JAH: Use our custom BottomBarWithButtons template instead of the standard BottomBar -->
 			<include>BottomBarWithButtons</include>
