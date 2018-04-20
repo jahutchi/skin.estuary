@@ -1,44 +1,38 @@
-[B]0.8.5[/B]
-• Updated language files from Transifex
+v1.9.20
+- Initial Krypton release based on the "final" krypton estuary skin from phil65/skin.estuary, plus the changes below.
+- PVR Recordings: Customise the breadcrumb to just show the text "Recordings".
+- PVR Breadcrumbs: remove the view name (Now / Next / Timeline) from the breadcrumb label.
+- PVR Channels Window: only show the channel category as the breadcrumb.
+- Adjusted the Fullscreen Info Textbox for PVR.
+- PVR Guide: When available from the Skin Helper Service, show PVR Thumbnail to the right-hand side of the bottom info panel.
+- TV Guide: Added a hidden button (id: 666) which can be mapped to the back button on your remote.
+- Adjust the PVR Timer icon to be to the left of the show title rather than below it.
+- Use a fixed colour rather than genre colours in the EPG. This is probably a matter of preference and should be made an option in the skin settings.
+- TV Guide: Show channel icons instead of the channel names in the EPG Grid.
+- TV Guide: Increase the font sizes.
+- TV Guide: Use a wider time bar with dates at top and times below.
+- Adjustments to the breadcrumbs in PVR-related windows.
+- Adjusted the ordering of the items on the Homescreen, and renamed a couple.
+- Use the skin helper service to enable PVR artwork.
+- Customised the display of the content panel in the Timer Rules window.
+- Removed TimersSubLabel i.e. Episode Name from the PVR Timers window. This is always the same as the plot for Freeview/Freesat so clutters the display.
+- Switched Channel Name and Label in the PVR Timers window.
+- Adjusted the layout of the PVR Recordings content panel.
+- Added an "Extra Actions" section to the TV Guide and TV Recordings side bar, which will only show when the Tvheadend API utilities addon is installed.
+- Removed Episode Name from the PVR Recordings Window, since this is the same as the plot for freeview/freesat.
+- Removed Episode Name from the PVR Guide, since this is the same as the plot for freeview/freesat.
+- Removed Episode Name from the PVR Channels window, since this is the same as the plot for freeview/freesat.
+- Remove Episode Name from the PVR Info Panel, since this is always the same as the plot for freeview/freesat
+- The center-dot character is not available in the fsme font, so adjusted the skin to use a hyphen instead.
+- Commented out the PVR Recording widgets from the home screen.
+- Adjustments to the seek bar for live tv.
+- Adjusted the PVR Info dialog.
+- Adjusted the "Now Playing" poster to use PVR artwork from the skin helper service if available.
+- Added a "Restart Kodi" option to the power menu list, though note this uses an external script.
+- Adjusted the PVR Channels, Timers & Recordings content panels to be semi-transparent so that extra Fanart can be seen.
+- Added custom freeview+freesat logo at the top of PVR-related windows.
+- Adjusted EPG progress indicator with gradient shading to make it more obvious where you are in the timeline.
+- Added colour button tips (R,G,Y,B) to the bottom of the TVGuide and TVRecordings windows.
+- Adjusted default font to fsme.
 
-[B]0.8.3[/B]
-• Updated language files from Transifex
 
-[B]0.8.2[/B]
-• Updated language files from Transifex
-
-[B]0.8.1[/B]
-• Updated language files from Transifex
-
-[B]0.7.13[/B]
-• Updated language files from Transifex
-
-[B]0.7.12[/B]
-• Updated language files from Transifex
-
-[B]0.7.11[/B]
-• Updated language files from Transifex
-
-[B]0.7.10[/B]
-• Updated language files from Transifex
-
-[B]0.7.8[/B]
-• Updated language files from Transifex
-
-[B]0.7.7[/B]
-• Updated language files from Transifex
-
-[B]0.7.3[/B]
-• Updated language files from Transifex
-
-[B]0.7.1[/B]
-• Updated language files from Transifex
-
-[B]0.6.2[/B]
-• Updated language files from Transifex
-
-[B]0.6.1[/B]
-• Updated language files from Transifex
-
-﻿[B]0.0.1[/B]
-• Initial commmit
