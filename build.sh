@@ -26,9 +26,9 @@ echo exclude.txt>>exclude.txt
 
 echo ----------------------------------------
 echo Creating XBT File...
-$BASE_DIR/Tools/TexturePacker/TexturePacker -dupecheck -input $SRC_DIR/media -output $PROJECT_OUT_DIR/media/Textures.xbt
-$BASE_DIR/Tools/TexturePacker/TexturePacker -dupecheck -input $SRC_DIR/themes/curial -output $PROJECT_OUT_DIR/media/curial.xbt
-$BASE_DIR/Tools/TexturePacker/TexturePacker -dupecheck -input $SRC_DIR/themes/flat -output $PROJECT_OUT_DIR/media/flat.xbt
+TexturePacker -dupecheck -input $SRC_DIR/media -output $PROJECT_OUT_DIR/media/Textures.xbt
+TexturePacker -dupecheck -input $SRC_DIR/themes/curial -output $PROJECT_OUT_DIR/media/curial.xbt
+TexturePacker -dupecheck -input $SRC_DIR/themes/flat -output $PROJECT_OUT_DIR/media/flat.xbt
 
 echo ----------------------------------------
 echo XBT Texture Files Created...
