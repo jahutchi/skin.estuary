@@ -240,7 +240,7 @@
 					<control type="label">
 						<top>-9</top>
 						<left>300</left>
-						<right>60</right>
+						<right>180</right>
 						<height>30</height>
 						<textcolor>button_focus</textcolor>
 						<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]$INFO[ListItem.EpgEventTitle,  [COLOR white],[/COLOR]]$INFO[ListItem.Genre,      $LOCALIZE[515]: [COLOR grey],[/COLOR]]</label>
@@ -248,10 +248,31 @@
 					<control type="textbox">
 						<left>300</left>
 						<top>38</top>
-						<right>60</right>
-						<height>173</height>
+						<right>220</right>
+						<height>163</height>
 						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<visible>!String.Contains(Window(Home).Property(SkinHelper.ListItem.Art.Thumb),/imagecache/) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Thumb))</visible>
+					</control>
+					<control type="textbox">
+						<left>300</left>
+						<top>38</top>
+						<right>10</right>   <!-- if there is no PVR thumbnail icon then we can make the plot wider -->
+						<height>163</height>
+						<label>$INFO[ListItem.Plot]</label>
+						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<visible>![!String.Contains(Window(Home).Property(SkinHelper.ListItem.Art.Thumb),/imagecache/) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Thumb))]</visible>
+					</control>
+					<!-- Show a thumbnail image bottom-right of the PVR Guide, if available -->
+					<control type="image">
+						<right>10</right>
+						<top>0</top>
+						<width>200</width>
+						<height>200</height>
+						<fadetime>200</fadetime>
+						<aspectratio align="right" aligny="top">keep</aspectratio>
+						<visible>!String.Contains(Window(Home).Property(SkinHelper.ListItem.Art.Thumb),/imagecache/) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Thumb))</visible>
+						<texture background="true">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Thumb)]</texture>
 					</control>
 				</control>
 			</control>
