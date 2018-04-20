@@ -802,3 +802,10 @@ msgstr ""
 msgctxt "#31169"
 msgid "Artwork related settings."
 msgstr ""
+
+
+#. Label Text setting for Home Screen
+#: /xml/SkinSettings.xml
+msgctxt "#31501"
+msgid "- Label Text"
+msgstr ""
