@@ -768,3 +768,10 @@ msgstr ""
 msgctxt "#31167"
 msgid "Animate background"
 msgstr ""
+
+
+#. Label Text setting for Home Screen
+#: /xml/SkinSettings.xml
+msgctxt "#31501"
+msgid "- Label Text"
+msgstr ""
