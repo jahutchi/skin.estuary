@@ -303,7 +303,14 @@
 		<value condition="!String.IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Container(9000).ListItem.Property(id)]$INFO[Skin.String(HomeFanart.ext)]</value>
 	</variable>
 	<variable name="MediaFanartVar">
+		<!-- Show PVR artwork using the skin helper service -->
 		<value condition="Skin.HasSetting(no_fanart)"></value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Fanart)) + [Window.IsActive(TVGuide) | Window.IsActive(TVRecordings) | Window.IsActive(TVTimers) | Window.IsActive(TVTimerRules) | Window.IsActive(TVChannels)]">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Fanart)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Landscape)) + [Window.IsActive(TVGuide) | Window.IsActive(TVRecordings) | Window.IsActive(TVTimers) | Window.IsActive(TVTimerRules) | Window.IsActive(TVChannels)]">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Landscape)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Poster)) + [Window.IsActive(TVGuide) | Window.IsActive(TVRecordings) | Window.IsActive(TVTimers) | Window.IsActive(TVTimerRules) | Window.IsActive(TVChannels)]">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Poster)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo)) + [Window.IsActive(TVGuide) | Window.IsActive(TVRecordings) | Window.IsActive(TVTimers) | Window.IsActive(TVTimerRules) | Window.IsActive(TVChannels)]">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearart)) + [Window.IsActive(TVGuide) | Window.IsActive(TVRecordings) | Window.IsActive(TVTimers) | Window.IsActive(TVTimerRules) | Window.IsActive(TVChannels)]">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearart)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner)) + [Window.IsActive(TVGuide) | Window.IsActive(TVRecordings) | Window.IsActive(TVTimers) | Window.IsActive(TVTimerRules) | Window.IsActive(TVChannels)]">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Banner)]</value>
 		<value condition="Window.IsActive(musicinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(pictureinfo) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[Window(home).Property(infobackground)]</value>
 		<value condition="Container.Content(genres) + Window.IsActive(videos)">$INFO[Skin.String(MovieGenreFanart.path)]$INFO[ListItem.Label]$INFO[Skin.String(MovieGenreFanart.ext)]</value>
 		<value condition="Window.IsActive(pictures) + String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.FolderPath]</value>
@@ -458,6 +465,19 @@
     <value condition="String.Contains(System.FriendlyName,MediaPC)">icons/pvr/blue_button.png</value>
     <value>icons/pvr/red_button.png</value>
   </variable>
+  <!-- These variables are used to enable the various Skin Helper settings for artwork if the skin helper plugin is installed.
+       They are called from Home.xml onload -->
+  <variable name="SkinHelperTogglePVRThumbs">
+    <value condition="System.HasAddon(script.skin.helper.service)">Skin.SetBool(SkinHelper.EnablePVRThumbs)</value>
+    <value>Skin.Reset(SkinHelper.EnablePVRThumbs)</value>
+  </variable>
+  <variable name="SkinHelperToggleExtraFanart">
+    <value>Skin.Reset(SkinHelper.EnableExtraFanart)</value>
+  </variable>
+  <variable name="SkinHelperToggleExtendedArt">
+    <value>Skin.Reset(SkinHelper.EnableExtendedArt)</value>
+  </variable>
+
 	<variable name="VideoHWDecoder">
 		<value condition="Player.Process(videohwdecoder)">HW</value>
 		<value>SW</value>

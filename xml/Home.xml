@@ -2,6 +2,10 @@
 <window>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
+	<!-- Use the skin helper service to enable PVR artwork -->
+	<onload>$VAR[SkinHelperTogglePVRThumbs]</onload>
+	<onload>$VAR[SkinHelperToggleExtraFanart]</onload>
+	<onload>$VAR[SkinHelperToggleExtendedArt]</onload>
 	<controls>
 		<control type="button" id="20000">
 			<include>HiddenObject</include>
