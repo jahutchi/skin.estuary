@@ -43,6 +43,7 @@
 								<aligny>top</aligny>
 								<label>$INFO[ListItem.Label][COLOR grey]$INFO[ListItem.ChannelName, - ][/COLOR]</label>
 							</control>
+							<!--
 							<control type="label">
 								<left>30</left>
 								<top>53</top>
@@ -52,6 +53,7 @@
 								<aligny>top</aligny>
 								<label>$VAR[TimersSubLabel]</label>
 							</control>
+							-->
 							<control type="label">
 								<right>20</right>
 								<top>13</top>
@@ -103,6 +105,7 @@
 								<aligny>top</aligny>
 								<label>$INFO[ListItem.Label]$INFO[ListItem.ChannelName, - ]</label>
 							</control>
+							<!--
 							<control type="label">
 								<left>30</left>
 								<top>53</top>
@@ -112,6 +115,7 @@
 								<aligny>top</aligny>
 								<label>$VAR[TimersSubLabel]</label>
 							</control>
+							-->
 							<control type="label">
 								<right>20</right>
 								<top>13</top>
