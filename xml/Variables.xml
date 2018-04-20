@@ -45,6 +45,11 @@
 		<value condition="Player.HasAudio">$INFO[MusicPlayer.Artist]</value>
 	</variable>
 	<variable name="FullScreenInfoTextBoxVar">
+		<!-- JAH: Added this for when playing a recording -->
+		<value condition="Pvr.IsPlayingRecording">$INFO[VideoPlayer.Title,[B],[/B][CR][CR]]$INFO[VideoPlayer.Plot]</value>
+		<!-- JAH: Customised this for when in LiveTV -->
+		<value condition="Control.HasFocus(5553) + VideoPlayer.Content(livetv)">$INFO[VideoPlayer.Title,[B],[/B][CR]][COLOR=button_focus]$INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime][/COLOR][CR][CR]$INFO[VideoPlayer.Plot]</value>
+		<value condition="Control.HasFocus(5555) + VideoPlayer.Content(livetv)">$INFO[VideoPlayer.NextTitle,[B],[/B][CR]][COLOR=button_focus]$INFO[VideoPlayer.NextStartTime] - $INFO[VideoPlayer.NextEndTime][/COLOR][CR][CR]$INFO[VideoPlayer.NextPlot]</value>
 		<value condition="Control.HasFocus(5553)">$INFO[VideoPlayer.Tagline,[B],[/B][CR]]$INFO[VideoPlayer.Plot]</value>
 		<value condition="Control.HasFocus(5555)">$INFO[VideoPlayer.NextTitle,[B],[/B][CR]]$INFO[VideoPlayer.NextPlot]</value>
 		<value>$INFO[VideoPlayer.CastAndRole]</value>
