@@ -116,13 +116,14 @@
 					<visible>!ListItem.IsFolder</visible>
 					<top>180</top>
 					<control type="label">
-						<left>170</left>
-						<top>57</top>
-						<width>560</width>
-						<height>262</height>
-						<wrapmultiline>true</wrapmultiline>
-						<label>$INFO[ListItem.Duration,$LOCALIZE[180]: ][CR]$INFO[ListItem.Date,$LOCALIZE[552]: ]</label>
+						<top>0</top>
+						<left>180</left>
+						<width>570</width>
+						<height>40</height>
+						<font>font36_title</font>
+						<label>$INFO[ListItem.Title]</label>
 					</control>
+					<!-- Hide Channel Name as we always have a channel logo anyway
 					<control type="label">
 						<left>170</left>
 						<top>10</top>
@@ -130,22 +131,24 @@
 						<height>262</height>
 						<font>font36_title</font>
 						<label>$INFO[ListItem.ChannelName]</label>
-					</control>
+					</control>-->
 					<control type="image">
-						<left>-20</left>
-						<top>15</top>
+						<left>0</left>
+						<top>0</top>
 						<width>150</width>
-						<height>120</height>
+						<height>150</height>
 						<fadetime>200</fadetime>
-						<aspectratio>keep</aspectratio>
+						<aspectratio align="left" aligny="center">keep</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-						<top>195</top>
-						<width>750</width>
-						<height>262</height>
-						<font>font36_title</font>
-						<label>$INFO[ListItem.Title]</label>
+						<left>180</left>
+						<top>60</top>
+						<width>570</width>
+						<height>150</height>
+						<wrapmultiline>true</wrapmultiline>
+						<!-- Switched around date and duration, would rather see the date first-->
+						<label>$INFO[ListItem.Date,$LOCALIZE[552]: ][CR]$INFO[ListItem.Duration,$LOCALIZE[180]: ]</label>
 					</control>
 					<!-- JAH: Hide Episode Name as this is same as plot on freeview/freesat
 					<control type="label">
@@ -156,7 +159,7 @@
 					</control>
 					-->
 					<control type="textbox">
-						<top>284</top>
+						<top>200</top>
 						<width>750</width>
 						<bottom>95</bottom>
 						<align>justify</align>
