@@ -61,7 +61,7 @@
 								<right>30</right>
 								<height>30</height>
 								<aligny>top</aligny>
-								<label>$INFO[ListItem.ChannelName][COLOR grey]$INFO[ListItem.Label, - ][/COLOR]</label>
+								<label>$INFO[ListItem.Label][COLOR grey]$INFO[ListItem.ChannelName, - ][/COLOR]</label>
 							</control>
 							<control type="label">
 								<left>50</left>
@@ -139,7 +139,7 @@
 								<right>30</right>
 								<height>100</height>
 								<aligny>top</aligny>
-								<label>$INFO[ListItem.ChannelName]$INFO[ListItem.Label, - ]</label>
+								<label>$INFO[ListItem.Label]$INFO[ListItem.ChannelName, - ]</label>
 							</control>
 							<control type="label">
 								<left>50</left>
