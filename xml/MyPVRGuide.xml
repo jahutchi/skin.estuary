@@ -290,5 +290,13 @@
 			<font></font>
 			<include>HiddenObject</include>
 		</control>
+		<!--This hidden button will trigger kodi to show full screen video if a channel is playing in the background -->
+		<!--Otherwise, it will execute the back action -->
+		<control type="button" id="666">
+			<label></label>
+			<include>HiddenObject</include>
+			<onfocus condition="Player.HasVideo">ActivateWindow(fullscreenvideo)</onfocus>
+			<onfocus condition="!Player.HasVideo">Action(Back)</onfocus>
+		</control>
 	</controls>
 </window>
