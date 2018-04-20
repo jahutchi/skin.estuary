@@ -162,7 +162,68 @@
 					<orientation>vertical</orientation>
 					<animation effect="zoom" start="100,100" end="50,100" center="-50,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(73)">conditional</animation>
 				</control>
-				<include>PVRInfoPanel</include>
+				<control type="group">
+					<visible>Window.IsActive(TVTimers)</visible>
+					<control type="image">
+						<top>120</top>
+						<width>270</width>
+						<height>220</height>
+						<aspectratio align="right">keep</aspectratio>
+						<texture fallback="DefaultTVShows.png">$INFO[Listitem.Icon]</texture>
+						<fadetime>200</fadetime>
+					</control>
+					<control type="label">
+						<top>360</top>
+						<width>540</width>
+						<height>262</height>
+						<font>font36_title</font>
+						<label>$INFO[ListItem.EpgEventTitle]</label>
+					</control>
+					<control type="textbox">
+						<top>420</top>
+						<width>820</width>
+						<label>$INFO[ListItem.Date]</label>
+					</control>
+					<control type="textbox">
+						<top>500</top>
+						<width>820</width>
+						<label>[B]$INFO[ListItem.Plot][/B]</label>
+					</control>
+				</control>
+				<!-- If in the Timer Rules then show the content a little differently -->
+				<control type="group">
+					<visible>Window.IsActive(TVTimerRules)</visible>
+					<control type="image">
+						<top>120</top>
+						<width>270</width>
+						<height>220</height>
+						<aspectratio align="right">keep</aspectratio>
+						<texture fallback="DefaultTVShows.png">$INFO[Listitem.Icon]</texture>
+						<fadetime>200</fadetime>
+					</control>
+					<control type="label">
+						<top>410</top>
+						<width>820</width>
+						<height>262</height>
+						<font>font36_title</font>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="textbox">
+						<top>490</top>
+						<width>820</width>
+						<textcolor>grey</textcolor>
+						<label>[B]$VAR[TimersSubLabel][/B]</label>
+					</control>
+					<control type="textbox">
+						<top>550</top>
+						<width>820</width>
+						<height>362</height>
+						<font>font27</font>
+						<textcolor>grey</textcolor>
+						<textcolor>80FFFFFF</textcolor>
+						<label>$INFO[ListItem.Comment][CR]$INFO[ListItem.Date]</label>
+					</control>
+				</control>
 			</control>
 		</control>
 		<include content="TopBar">
