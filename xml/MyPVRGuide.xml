@@ -62,35 +62,35 @@
 								<visible>!ListItem.Property(DateLabel)</visible>
 							</control>
 						</rulerlayout>
-						<channellayout height="62" width="350">
+						<channellayout height="71" width="250">
 							<control type="label">
 								<left>2</left>
-								<top>-2</top>
+								<top>0</top>
 								<width>75</width>
-								<height>60</height>
-								<font>font32_title</font>
+								<height>70</height>
+								<font>font37</font>
 								<label>$INFO[ListItem.ChannelNumberLabel]</label>
 								<align>center</align>
 								<aligny>center</aligny>
 							</control>
 							<control type="label" id="1">
 								<left>68</left>
-								<top>-2</top>
-								<width>350</width>
-								<height>60</height>
-								<font>font12</font>
+								<top>0</top>
+								<width>450</width>
+								<height>70</height>
+								<font>font37</font>
 								<label>$INFO[ListItem.ChannelName]</label>
 								<aligny>center</aligny>
 								<textoffsetx>10</textoffsetx>
 							</control>
 						</channellayout>
-						<focusedchannellayout height="62" width="350">
+						<focusedchannellayout height="71" width="250">
 							<control type="label">
 								<left>2</left>
-								<top>-2</top>
+								<top>0</top>
 								<width>75</width>
-								<height>60</height>
-								<font>font32_title</font>
+								<height>70</height>
+								<font>font37</font>
 								<label>$INFO[ListItem.ChannelNumberLabel]</label>
 								<textcolor>button_focus</textcolor>
 								<align>center</align>
@@ -98,29 +98,29 @@
 							</control>
 							<control type="label" id="1">
 								<left>68</left>
-								<top>-2</top>
-								<width>350</width>
-								<height>60</height>
-								<font>font12</font>
+								<top>0</top>
+								<width>450</width>
+								<height>70</height>
+								<font>font37</font>
 								<label>$INFO[ListItem.ChannelName]</label>
 								<textcolor>button_focus</textcolor>
 								<aligny>center</aligny>
 								<textoffsetx>10</textoffsetx>
 							</control>
 						</focusedchannellayout>
-						<itemlayout height="62" width="60">
+						<itemlayout height="71" width="60">
 							<control type="image" id="2">
-								<width>58</width>
-								<height>58</height>
+								<width>60</width>
+								<height>71</height>
 								<texture border="3" fallback="windows/pvr/epg-genres/0.png">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</texture>
 							</control>
 							<control type="label" id="1">
 								<left>6</left>
 								<top>0</top>
 								<width>50</width>
-								<height>36</height>
+								<height>70</height>
 								<aligny>center</aligny>
-								<font>font12</font>
+								<font>font37</font>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="image">
@@ -131,23 +131,23 @@
 								<texture>$VAR[PVRTimerIcon]</texture>
 							</control>
 						</itemlayout>
-						<focusedlayout height="62" width="60">
+						<focusedlayout height="71" width="60">
 							<control type="image" id="2">
 								<top>2</top>
 								<left>2</left>
 								<width>54</width>
-								<height>54</height>
+								<height>64</height>
 								<texture colordiffuse="button_focus">lists/focus.png</texture>
 								<visible>Control.HasFocus(10)</visible>
 							</control>
 							<control type="image" id="2">
 								<width>58</width>
-								<height>58</height>
+								<height>70</height>
 								<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 							</control>
 							<control type="image" id="2">
-								<width>58</width>
-								<height>58</height>
+								<width>60</width>
+								<height>71</height>
 								<top>0</top>
 								<texture border="3" fallback="windows/pvr/epg-genres/0.png">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</texture>
 								<visible>!Control.HasFocus(10)</visible>
@@ -156,9 +156,9 @@
 								<left>6</left>
 								<top>0</top>
 								<width>50</width>
-								<height>36</height>
+								<height>70</height>
 								<aligny>center</aligny>
-								<font>font12</font>
+								<font>font37</font>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="image">
