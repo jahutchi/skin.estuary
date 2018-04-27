@@ -1,4 +1,4 @@
-v1.9.20
+v1.47.0
 - Initial Krypton release based on the "final" krypton estuary skin from phil65/skin.estuary, plus the changes below.
 - PVR Recordings: Customise the breadcrumb to just show the text "Recordings".
 - PVR Breadcrumbs: remove the view name (Now / Next / Timeline) from the breadcrumb label.
