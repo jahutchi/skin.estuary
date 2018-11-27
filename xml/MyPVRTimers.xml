@@ -13,7 +13,9 @@
 					<left>0</left>
 					<top>list_y_offset</top>
 					<right>918</right>
-					<bottom>list_y_offset</bottom>
+					<!-- JAH Changed this so that left listing stops before my custom button tips -->
+					<!-- <bottom>list_y_offset</bottom>-->
+					<bottom>60</bottom>
 					<onup>50</onup>
 					<ondown>50</ondown>
 					<onleft>9000</onleft>
@@ -165,8 +167,12 @@
 		<include content="TopBar">
 			<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRTimersVar]" />
 		</include>
-		<include content="BottomBar">
+		<include condition="!Skin.HasSetting(BottomBarColourButtonsEnabled)" content="BottomBar">
 			<param name="info_visible" value="true" />
+		</include>
+		<include condition="Skin.HasSetting(BottomBarColourButtonsEnabled)" content="BottomBarWithButtons">
+			<param name="buttons_right" value="900" />
+			<param name="buttons_top" value="65" />
 		</include>
 		<control type="label">
 			<right>20</right>
