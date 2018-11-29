@@ -884,3 +884,14 @@ msgctxt "#31519"
 msgid "PVR Button Tips"
 msgstr ""
 
+#. Label for the EPG section of Skin Settings
+#: xml/SkinSettings.xml
+msgctxt "#31520"
+msgid "EPG"
+msgstr ""
+
+#. Label for Enable wider time slots in the vertical grid setting
+#: xml/SkinSettings.xml
+msgctxt "#31521"
+msgid "Enable wider time slots in the vertical grid"
+msgstr ""
