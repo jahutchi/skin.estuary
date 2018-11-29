@@ -225,6 +225,7 @@
 			<include>PVRChannelNumberInput</include>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRGuideVar]" />
+				<param name="sublabel" value="" />
 			</include>
 			<include condition="!Skin.HasSetting(BottomBarColourButtonsEnabled)" content="BottomBar">
 				<param name="info_visible" value="true" />
