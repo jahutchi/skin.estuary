@@ -397,8 +397,8 @@
 		<value>$INFO[Control.GetLabel(30)]</value>
 	</variable>
 	<variable name="BreadcrumbsPVRRecordingsVar">
-		<value condition="Window.IsActive(TVRecordings)">$LOCALIZE[19020] / $LOCALIZE[19017]$INFO[Control.GetLabel(30), / ]</value>
-		<value>$LOCALIZE[19021] / $LOCALIZE[19017]$INFO[Control.GetLabel(30), / ]</value>
+		<value condition="Window.IsActive(TVRecordings)">$LOCALIZE[19020] $LOCALIZE[19017]</value>
+		<value>$LOCALIZE[19021] $LOCALIZE[19017]</value>
 	</variable>
 	<variable name="BreadcrumbsPVRTimersVar">
 		<value condition="Window.IsActive(TVTimers)">$LOCALIZE[19020] / $LOCALIZE[19040]</value>
