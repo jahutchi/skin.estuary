@@ -895,3 +895,10 @@ msgstr ""
 msgctxt "#31521"
 msgid "Enable wider time slots in the vertical grid"
 msgstr ""
+
+#. Label for Display channel icons instead of channel names
+#: xml/SkinSettings.xml
+msgctxt "#31522"
+msgid "Display channel icons instead of channel names"
+msgstr ""
+
