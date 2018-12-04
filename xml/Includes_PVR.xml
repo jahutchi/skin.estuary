@@ -441,7 +441,7 @@
 						<left>68</left>
 						<top>-2</top>
 						<height>60</height>
-						<font>font13</font>
+						<font>font14</font>
 						<label>$INFO[ListItem.ChannelName]</label>
 						<aligny>center</aligny>
 						<textoffsetx>10</textoffsetx>
@@ -463,7 +463,7 @@
 						<left>68</left>
 						<top>-2</top>
 						<height>60</height>
-						<font>font13</font>
+						<font>font14</font>
 						<label>$INFO[ListItem.ChannelName]</label>
 						<textcolor>button_focus</textcolor>
 						<aligny>center</aligny>
@@ -519,20 +519,30 @@
 						<height>58</height>
 						<texture border="3" fallback="windows/pvr/epg-genres/0.png">$VAR[EPGBackgroundColoursImage]</texture>
 					</control>
+					<control type="image">
+						<left>6</left>
+						<top>8</top>
+						<width>30</width>
+						<height>30</height>
+						<texture>$VAR[PVRTimerIcon]</texture>
+					</control>
 					<control type="label" id="1">
 						<left>6</left>
 						<top>0</top>
-						<height>36</height>
+						<height>40</height>
 						<aligny>center</aligny>
-						<font>font13</font>
+						<font>font14</font>
 						<label>$INFO[ListItem.Label]</label>
+						<visible>![ListItem.IsRecording | ListItem.HasTimerSchedule | ListItem.HasTimer | ListItem.HasRecording]</visible>
 					</control>
-					<control type="image">
-						<left>6</left>
-						<top>35</top>
-						<width>20</width>
-						<height>20</height>
-						<texture>$VAR[PVRTimerIcon]</texture>
+					<control type="label" id="1">
+						<left>50</left>
+						<top>0</top>
+						<height>40</height>
+						<aligny>center</aligny>
+						<font>font14</font>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>ListItem.IsRecording | ListItem.HasTimerSchedule | ListItem.HasTimer | ListItem.HasRecording</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="62" width="60">
@@ -556,20 +566,30 @@
 						<texture border="3" fallback="windows/pvr/epg-genres/0.png">$VAR[EPGBackgroundColoursImage]</texture>
 						<visible>!Control.HasFocus($PARAM[control_id])</visible>
 					</control>
+					<control type="image">
+						<left>6</left>
+						<top>8</top>
+						<width>30</width>
+						<height>30</height>
+						<texture>$VAR[PVRTimerIcon]</texture>
+					</control>
 					<control type="label" id="1">
 						<left>6</left>
 						<top>0</top>
-						<height>36</height>
+						<height>40</height>
 						<aligny>center</aligny>
-						<font>font13</font>
+						<font>font14</font>
 						<label>$INFO[ListItem.Label]</label>
+						<visible>![ListItem.IsRecording | ListItem.HasTimerSchedule | ListItem.HasTimer | ListItem.HasRecording]</visible>
 					</control>
-					<control type="image">
-						<left>6</left>
-						<top>35</top>
-						<width>20</width>
-						<height>20</height>
-						<texture>$VAR[PVRTimerIcon]</texture>
+					<control type="label" id="1">
+						<left>50</left>
+						<top>0</top>
+						<height>40</height>
+						<aligny>center</aligny>
+						<font>font14</font>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>ListItem.IsRecording | ListItem.HasTimerSchedule | ListItem.HasTimer | ListItem.HasRecording</visible>
 					</control>
 				</focusedlayout>
 			</control>
