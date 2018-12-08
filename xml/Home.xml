@@ -421,7 +421,7 @@
 							<param name="widget_target" value="pvr"/>
 							<param name="list_id" value="12300"/>
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
-							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
+							<param name="label2" value="$INFO[ListItem.Title]$VAR[PVREpisodeName, (,)]"/>
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!System.HasPVRAddon">
@@ -494,7 +494,7 @@
 							<param name="widget_target" value="pvr"/>
 							<param name="list_id" value="13300"/>
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
-							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
+							<param name="label2" value="$INFO[ListItem.Title]$VAR[PVREpisodeName, (,)]"/>
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!System.HasPVRAddon">

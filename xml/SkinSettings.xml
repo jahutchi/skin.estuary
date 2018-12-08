@@ -587,6 +587,12 @@
 					<selected>Skin.HasSetting(EPGVerticalGridEnableWiderTimeSlots)</selected>
 					<onclick>Skin.ToggleSetting(EPGVerticalGridEnableWiderTimeSlots)</onclick>
 				</control>
+				<control type="radiobutton" id="68003">
+					<label>$LOCALIZE[31542]</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(PVRHideEpisodeName)</selected>
+					<onclick>Skin.ToggleSetting(PVRHideEpisodeName)</onclick>
+				</control>
 				<control type="radiobutton" id="68002">
 					<label>$LOCALIZE[31522]</label>
 					<include>DefaultSettingButton</include>

@@ -326,7 +326,8 @@
 		<value condition="Window.IsActive(visualisation) + Integer.IsGreater(Playlist.Length,1) + Integer.IsGreater(Playlist.Position,0)">$LOCALIZE[554] $INFO[Playlist.Position] / $INFO[Playlist.Length]</value>
 		<value condition="VideoPlayer.Content(musicvideos)">$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.Album, - ]</value>
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Season,[COLOR button_focus]S,[/COLOR]]$INFO[VideoPlayer.Episode,[COLOR button_focus]E,: [/COLOR]]$INFO[VideoPlayer.TVShowTitle]</value>
-		<value condition="VideoPlayer.Content(LiveTV) | PVR.IsPlayingRecording | PVR.IsPlayingEpgTag">$INFO[VideoPlayer.ChannelNumberLabel,([COLOR button_focus],[/COLOR]) ]$INFO[VideoPlayer.ChannelName] $INFO[VideoPlayer.EpisodeName, - ]</value>
+		<value condition="!Skin.HasSetting(PVRHideEpisodeName) + [VideoPlayer.Content(LiveTV) | PVR.IsPlayingRecording | PVR.IsPlayingEpgTag]">$INFO[VideoPlayer.ChannelNumberLabel,([COLOR button_focus],[/COLOR]) ]$INFO[VideoPlayer.ChannelName] $INFO[VideoPlayer.EpisodeName, - ]</value>
+		<value condition="Skin.HasSetting(PVRHideEpisodeName) + [VideoPlayer.Content(LiveTV) | PVR.IsPlayingRecording | PVR.IsPlayingEpgTag]">$INFO[VideoPlayer.ChannelNumberLabel,([COLOR button_focus],[/COLOR]) ]$INFO[VideoPlayer.ChannelName]</value>
 		<value>$INFO[VideoPlayer.Genre]</value>
 	</variable>
 	<variable name="PlayerClearLogoVar">
@@ -629,5 +630,9 @@
 		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),16)">windows/pvr/epg-genres/240.png</value>
 		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),17)">windows/pvr/epg-genres/256.png</value>
 		<value>$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</value>
+	</variable>
+	<variable name="PVREpisodeName">
+		<value condition="Skin.HasSetting(PVRHideEpisodeName)"></value>
+		<value>$INFO[ListItem.EpisodeName]</value>
 	</variable>
 </includes>

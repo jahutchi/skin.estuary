@@ -261,7 +261,8 @@
 				<top>435</top>
 				<width>830</width>
 				<height>70</height>
-				<label>[I]$VAR[SeasonEpisodeLabel]$INFO[ListItem.EpisodeName][/I]</label>
+				<label>[I]$VAR[SeasonEpisodeLabel]$VAR[PVREpisodeName][/I]</label>
+				<visible>!Skin.HasSetting(PVRHideEpisodeName)</visible>
 			</control>
 			<control type="textbox">
 				<top>490</top>
@@ -269,6 +270,15 @@
 				<bottom>75</bottom>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<visible>!Skin.HasSetting(PVRHideEpisodeName)</visible>
+			</control>
+			<control type="textbox">
+				<top>450</top>
+				<width>830</width>
+				<bottom>75</bottom>
+				<label>$INFO[ListItem.Plot]</label>
+				<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<visible>Skin.HasSetting(PVRHideEpisodeName)</visible>
 			</control>
 			<control type="textbox">
 				<top>530</top>
@@ -307,7 +317,7 @@
 							<height>90</height>
 							<width>830</width>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.Date,[COLOR grey],[/COLOR][CR]]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+							<label>$INFO[ListItem.Date,[COLOR grey],[/COLOR][CR]]$INFO[ListItem.Label]$VAR[PVREpisodeName, (,)]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</focusedlayout>
@@ -317,7 +327,7 @@
 							<height>90</height>
 							<width>830</width>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.Date,[COLOR grey],[/COLOR][CR]]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+							<label>$INFO[ListItem.Date,[COLOR grey],[/COLOR][CR]]$INFO[ListItem.Label]$VAR[PVREpisodeName, (,)]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</itemlayout>

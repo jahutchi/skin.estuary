@@ -231,6 +231,15 @@
 							<width>70%</width>
 							<height>30</height>
 							<label>[B]$INFO[ListItem.EpgEventTitle][/B]</label>
+							<visible>!Skin.HasSetting(PVRHideEpisodeName)</visible>
+						</control>
+						<control type="label">
+							<width>70%</width>
+							<height>90</height>
+							<font>font14</font>
+							<aligny>center</aligny>
+							<label>[B]$INFO[ListItem.EpgEventTitle][/B]</label>
+							<visible>Skin.HasSetting(PVRHideEpisodeName)</visible>
 						</control>
 						<control type="label">
 							<top>0</top>
@@ -244,7 +253,8 @@
 							<top>35</top>
 							<width>60%</width>
 							<height>30</height>
-							<label>[I][COLOR grey]$VAR[SeasonEpisodeLabel][/COLOR]$INFO[ListItem.EpisodeName,[COLOR white],[/COLOR]][/I]</label>
+							<label>[I][COLOR grey]$VAR[SeasonEpisodeLabel][/COLOR]$VAR[PVREpisodeName,[COLOR white],[/COLOR]][/I]</label>
+							<visible>!Skin.HasSetting(PVRHideEpisodeName)</visible>
 						</control>
 						<control type="label">
 							<top>35</top>

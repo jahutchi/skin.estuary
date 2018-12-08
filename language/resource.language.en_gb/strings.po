@@ -1015,3 +1015,9 @@ msgstr ""
 msgctxt "#31541"
 msgid "Fixed Colour 17"
 msgstr ""
+
+#. Label for Hide Episode Name in all PVR windows
+#: xml/SkinSettngs.xml
+msgctxt "#31542"
+msgid "Hide Episode Name in all PVR windows"
+msgstr ""
