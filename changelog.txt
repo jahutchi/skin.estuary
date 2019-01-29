@@ -1,44 +1,38 @@
-[B]0.8.5[/B]
-• Updated language files from Transifex
+skin.estuary.ukfta change log
+-----------------------------
 
-[B]0.8.3[/B]
-• Updated language files from Transifex
+This is a slightly modified version of the default "Estuary" skin.
+Includes customisations related to UK Free-To-Air (FTA) networks (Freeview & Freesat).
+Also includes integration with the script.tvheadend.apiutils addon.
 
-[B]0.8.2[/B]
-• Updated language files from Transifex
 
-[B]0.8.1[/B]
-• Updated language files from Transifex
-
-[B]0.7.13[/B]
-• Updated language files from Transifex
-
-[B]0.7.12[/B]
-• Updated language files from Transifex
-
-[B]0.7.11[/B]
-• Updated language files from Transifex
-
-[B]0.7.10[/B]
-• Updated language files from Transifex
-
-[B]0.7.8[/B]
-• Updated language files from Transifex
-
-[B]0.7.7[/B]
-• Updated language files from Transifex
-
-[B]0.7.3[/B]
-• Updated language files from Transifex
-
-[B]0.7.1[/B]
-• Updated language files from Transifex
-
-[B]0.6.2[/B]
-• Updated language files from Transifex
-
-[B]0.6.1[/B]
-• Updated language files from Transifex
-
-﻿[B]0.0.1[/B]
-• Initial commit
+v2.0.1: Based on the Kodi Leia 18.0 final estuary skin, with the following changes:
+  - Adjusted default font to fsme
+  - Adjusted EPG progress indicator with gradient shading to make it more obvious where you are in the timeline
+  - Added custom freeview+freesat logo at the top of PVR-related windows
+  - The center-dot character is not available in the fsme font, so adjusted the skin to use a hyphen instead.
+  - Homescreen: Made the text of the menu items configurable
+  - Homescreen: Moved the TV item to the top
+  - Homescreen: Adjust the TV item to open the TV Guide when clicked
+  - Added configurable remote button tips:
+      Added New skin settings so that the colours and button text can be defined
+      Added colour button tips (R,G,Y,B) to the bottom of the TV Guide, Radio Guide, TV Recordings, TV Timers & TV Timer Rules windows
+      Added Skip Forwards (+12h) and SkipBackwards (-12h) button tips to the TV Guide
+  - TVGuide: Use a wider time bar with dates at top and times below
+  - Breadcrumbs: adjustments to the placement of breadcrumb labels and sub-labels in PVR-related windows
+  - Breadcrumbs: show only the channel category in the TV Guide and Radio Guide
+  - Breadcrumbs: don't show the sub-label in the TV Guide or Radio Guide
+  - Breadcrumbs: show only the channel category in the TV Channels window
+  - Breadcrumbs: use the text "TV Recordings" and "Radio Recordings" in those windows
+  - Breadcrumbs: adjustments to the text used in the TV/Radio Timers and Timer Rules windows
+  - TVGuide: Moved the EPG Grid up slightly
+  - TVGuide: added option to make the time blocks wider in the verticle epg grid
+  - TVGuide: added option to show icons instead of channel names
+  - TVGuide: added option to use a fixed colour in the epg instead of genre colours
+  - TVGuide: Use slightly larger fonts, and re-position the timer icons
+  - TVGuide: Added a hidden button (id: 666) which can be mapped to the back button on your remote.
+      This will show full screen video if a channel is playing in the background, otherwise it will execute the normal back action.
+  - Added skin option to hide PVR Episode Names
+  - Added the show title and start/end times to the seek bar for PVR
+  - Added an "Extra Actions" section to the TV Guide and TV Recordings side bar, which will only show when the Tvheadend API utilities addon is installed.
+  - Switched Channel Name and Label in the PVR Timers window
