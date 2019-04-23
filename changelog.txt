@@ -5,7 +5,9 @@ This is a slightly modified version of the default "Estuary" skin.
 Includes customisations related to UK Free-To-Air (FTA) networks (Freeview & Freesat).
 Also includes integration with the script.tvheadend.apiutils addon.
 
-
+v2.0.2: Updates for Kodi Leia 18.2
+  - Merged changes made to the standard estuary skin between Leia 18.0->18.2 (f80d6df)
+  - Merged upstream fix for the ordering of TVShowTitle and Title in DialogVideoInfo
 v2.0.1: Based on the Kodi Leia 18.0 final estuary skin, with the following changes:
   - Adjusted default font to fsme
   - Adjusted EPG progress indicator with gradient shading to make it more obvious where you are in the timeline
