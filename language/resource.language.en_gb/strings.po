@@ -1039,3 +1039,27 @@ msgstr ""
 msgctxt "#31545"
 msgid "Delete All Watched"
 msgstr ""
+
+#. Label for the Group remote button tip
+#: xml/Variables.xml
+msgctxt "#31546"
+msgid "Group"
+msgstr ""
+
+#. Label for the Ungroup remote button tip
+#: xml/Variables.xml
+msgctxt "#31547"
+msgid "Ungroup"
+msgstr ""
+
+#. Label for the Tick remote button tip
+#: xml/Variables.xml
+msgctxt "#31548"
+msgid "Tick"
+msgstr ""
+
+#. Label for the Untick remote button tip
+#: xml/Variables.xml
+msgctxt "#31549"
+msgid "Untick"
+msgstr ""

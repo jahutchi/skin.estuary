@@ -536,6 +536,11 @@
 	<variable name="BottomBarColourButton1Text">
 		<value condition="Window.IsActive(TVGuide)">$INFO[Skin.String(BottomBarColourButton1TVGuideText)]</value>
 		<value condition="Window.IsActive(RadioGuide)">$INFO[Skin.String(BottomBarColourButton1RadioGuideText)]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton1TVRecordingsText,GroupUngroup) + String.Contains(Control.GetLabel(5),*)">$LOCALIZE[31547]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton1TVRecordingsText,GroupUngroup)">$LOCALIZE[31546]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton1TVRecordingsText,TickUntick) + ListItem.IsParentFolder"></value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton1TVRecordingsText,TickUntick) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">$LOCALIZE[31549]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton1TVRecordingsText,TickUntick)">$LOCALIZE[31548]</value>
 		<value condition="Window.IsActive(TVRecordings)">$INFO[Skin.String(BottomBarColourButton1TVRecordingsText)]</value>
 		<value condition="Window.IsActive(TVTimers)">$INFO[Skin.String(BottomBarColourButton1TVTimersText)]</value>
 		<value condition="Window.IsActive(TVTimerRules)">$INFO[Skin.String(BottomBarColourButton1TVTimerRulesText)]</value>
@@ -543,6 +548,11 @@
 	<variable name="BottomBarColourButton2Text">
 		<value condition="Window.IsActive(TVGuide)">$INFO[Skin.String(BottomBarColourButton2TVGuideText)]</value>
 		<value condition="Window.IsActive(RadioGuide)">$INFO[Skin.String(BottomBarColourButton2RadioGuideText)]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton2TVRecordingsText,GroupUngroup) + String.Contains(Control.GetLabel(5),*)">$LOCALIZE[31547]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton2TVRecordingsText,GroupUngroup)">$LOCALIZE[31546]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton2TVRecordingsText,TickUntick) + ListItem.IsParentFolder"></value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton2TVRecordingsText,TickUntick) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">$LOCALIZE[31549]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton2TVRecordingsText,TickUntick)">$LOCALIZE[31548]</value>
 		<value condition="Window.IsActive(TVRecordings)">$INFO[Skin.String(BottomBarColourButton2TVRecordingsText)]</value>
 		<value condition="Window.IsActive(TVTimers)">$INFO[Skin.String(BottomBarColourButton2TVTimersText)]</value>
 		<value condition="Window.IsActive(TVTimerRules)">$INFO[Skin.String(BottomBarColourButton2TVTimerRulesText)]</value>
@@ -550,6 +560,11 @@
 	<variable name="BottomBarColourButton3Text">
 		<value condition="Window.IsActive(TVGuide)">$INFO[Skin.String(BottomBarColourButton3TVGuideText)]</value>
 		<value condition="Window.IsActive(RadioGuide)">$INFO[Skin.String(BottomBarColourButton3RadioGuideText)]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton3TVRecordingsText,GroupUngroup) + String.Contains(Control.GetLabel(5),*)">$LOCALIZE[31547]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton3TVRecordingsText,GroupUngroup)">$LOCALIZE[31546]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton3TVRecordingsText,TickUntick) + ListItem.IsParentFolder"></value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton3TVRecordingsText,TickUntick) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">$LOCALIZE[31549]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton3TVRecordingsText,TickUntick)">$LOCALIZE[31548]</value>
 		<value condition="Window.IsActive(TVRecordings)">$INFO[Skin.String(BottomBarColourButton3TVRecordingsText)]</value>
 		<value condition="Window.IsActive(TVTimers)">$INFO[Skin.String(BottomBarColourButton3TVTimersText)]</value>
 		<value condition="Window.IsActive(TVTimerRules)">$INFO[Skin.String(BottomBarColourButton3TVTimerRulesText)]</value>
@@ -557,6 +572,11 @@
 	<variable name="BottomBarColourButton4Text">
 		<value condition="Window.IsActive(TVGuide)">$INFO[Skin.String(BottomBarColourButton4TVGuideText)]</value>
 		<value condition="Window.IsActive(RadioGuide)">$INFO[Skin.String(BottomBarColourButton4RadioGuideText)]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton4TVRecordingsText,GroupUngroup) + String.Contains(Control.GetLabel(5),*)">$LOCALIZE[31547]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton4TVRecordingsText,GroupUngroup)">$LOCALIZE[31546]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton4TVRecordingsText,TickUntick) + ListItem.IsParentFolder"></value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton4TVRecordingsText,TickUntick) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">$LOCALIZE[31549]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton4TVRecordingsText,TickUntick)">$LOCALIZE[31548]</value>
 		<value condition="Window.IsActive(TVRecordings)">$INFO[Skin.String(BottomBarColourButton4TVRecordingsText)]</value>
 		<value condition="Window.IsActive(TVTimers)">$INFO[Skin.String(BottomBarColourButton4TVTimersText)]</value>
 		<value condition="Window.IsActive(TVTimerRules)">$INFO[Skin.String(BottomBarColourButton4TVTimerRulesText)]</value>
