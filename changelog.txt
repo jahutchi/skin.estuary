@@ -5,6 +5,10 @@ This is a slightly modified version of the default "Estuary" skin.
 Includes customisations related to UK Free-To-Air (FTA) networks (Freeview & Freesat).
 Also includes integration with the script.tvheadend.apiutils addon.
 
+v2.0.4: Updates for Kodi Leia 18.4
+  - Merged changes made to the standard estuary skin between Leia 18.3->18.4 (70c26b3a90)
+  - Adjusted the power button menu so that Exit is at the bottom, and Suspend is at the top
+  - Remote Button Tips: handle TickUntick and GroupUngroup with special meaning
 v2.0.3: Updates for Kodi Leia 18.3
   - Merged changes made to the standard estuary skin between Leia 18.2->18.3 (a52b37d)
   - Show the "Currently Recording" text and icon when PVR.IsPlayingActiveRecording is true
