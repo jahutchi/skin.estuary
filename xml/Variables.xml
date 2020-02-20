@@ -596,7 +596,7 @@
 		<value condition="Skin.HasSetting(BottomBarColourButtonsEnabled) + Skin.HasSetting(BottomBarSkipButtonsEnabled) + [Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)]">$LOCALIZE[31518]</value>
 	</variable>
 	<variable name="SeasonEpisodeLabel">
-		<value condition="String.IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.Season,Season , ]$INFO[ListItem.Episode,Episode ]</value>
+		<value condition="String.IsEmpty(ListItem.EpisodeName) | Skin.HasSetting(PVRHideEpisodeName) | String.IsEqual(ListItem.EpisodeName,ListItem.Plot)">$INFO[ListItem.Season,Season , ]$INFO[ListItem.Episode,Episode ]</value>
 		<value>$INFO[ListItem.Season,Season , ]$INFO[ListItem.Episode,Episode ,: ]</value>
 	</variable>
 	<variable name="ExpirationDateTimeLabel">
@@ -666,7 +666,7 @@
 		<value>$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</value>
 	</variable>
 	<variable name="PVREpisodeName">
-		<value condition="Skin.HasSetting(PVRHideEpisodeName)"></value>
+		<value condition="Skin.HasSetting(PVRHideEpisodeName) | String.IsEqual(ListItem.EpisodeName,ListItem.Plot)"></value>
 		<value>$INFO[ListItem.EpisodeName]</value>
 	</variable>
 </includes>
