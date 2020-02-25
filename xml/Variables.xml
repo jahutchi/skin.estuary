@@ -679,4 +679,7 @@
 	<variable name="PVRPlayerEpisodeSummaryLabel">
 		<value>$VAR[SeasonEpisodePlayerLabel]$VAR[PVRPlayerEpisodeName]</value>
 	</variable>
+	<variable name="PVREpisodeSummaryLabel">
+		<value>$VAR[SeasonEpisodeLabel,[I][COLOR grey],[/COLOR][/I]]$VAR[PVREpisodeName,[I][COLOR white],[/COLOR][/I]]</value>
+	</variable>
 </includes>

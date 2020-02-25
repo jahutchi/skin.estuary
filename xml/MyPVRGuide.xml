@@ -231,7 +231,7 @@
 							<width>70%</width>
 							<height>30</height>
 							<label>[B]$INFO[ListItem.EpgEventTitle][/B]</label>
-							<visible>!Skin.HasSetting(PVRHideEpisodeName)</visible>
+							<visible>!String.IsEmpty(Control.GetLabel(667))</visible>
 						</control>
 						<control type="label">
 							<width>70%</width>
@@ -239,7 +239,7 @@
 							<font>font14</font>
 							<aligny>center</aligny>
 							<label>[B]$INFO[ListItem.EpgEventTitle][/B]</label>
-							<visible>Skin.HasSetting(PVRHideEpisodeName)</visible>
+							<visible>String.IsEmpty(Control.GetLabel(667))</visible>
 						</control>
 						<control type="label">
 							<top>0</top>
@@ -249,12 +249,11 @@
 							<align>right</align>
 							<label>[COLOR button_focus]$INFO[ListItem.StartTime,[COLOR grey]$LOCALIZE[555]:[/COLOR] ][/COLOR]$INFO[ListItem.EndTime,[COLOR button_focus] - ,[/COLOR]]</label>
 						</control>
-						<control type="label">
+						<control type="label" id="667">
 							<top>35</top>
 							<width>60%</width>
 							<height>30</height>
-							<label>[I][COLOR grey]$VAR[SeasonEpisodeLabel][/COLOR]$VAR[PVREpisodeName,[COLOR white],[/COLOR]][/I]</label>
-							<visible>!Skin.HasSetting(PVRHideEpisodeName)</visible>
+							<label>$VAR[PVREpisodeSummaryLabel]</label>
 						</control>
 						<control type="label">
 							<top>35</top>

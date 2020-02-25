@@ -257,12 +257,11 @@
 				<label>$INFO[ListItem.EpgEventTitle]</label>
 				<visible>PVR.HasEpg</visible>
 			</control>
-			<control type="label">
+			<control type="label" id="4999">
 				<top>435</top>
 				<width>830</width>
 				<height>70</height>
-				<label>[I]$VAR[SeasonEpisodeLabel]$VAR[PVREpisodeName][/I]</label>
-				<visible>!Skin.HasSetting(PVRHideEpisodeName)</visible>
+				<label>$VAR[PVREpisodeSummaryLabel]</label>
 			</control>
 			<control type="textbox">
 				<top>490</top>
@@ -270,7 +269,7 @@
 				<bottom>75</bottom>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>!Skin.HasSetting(PVRHideEpisodeName)</visible>
+				<visible>!String.IsEmpty(Control.GetLabel(4999))</visible>
 			</control>
 			<control type="textbox">
 				<top>450</top>
@@ -278,7 +277,7 @@
 				<bottom>75</bottom>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>Skin.HasSetting(PVRHideEpisodeName)</visible>
+				<visible>String.IsEmpty(Control.GetLabel(4999))</visible>
 			</control>
 			<control type="textbox">
 				<top>530</top>
