@@ -5,6 +5,14 @@ This is a slightly modified version of the default "Estuary" skin.
 Includes customisations related to UK Free-To-Air (FTA) networks (Freeview & Freesat).
 Also includes integration with the script.tvheadend.apiutils addon.
 
+
+v2.0.5: Updates for Kodi Leia 18.5
+  - Merged changes made to the standard estuary skin between Leia 18.4->18.5 (plus commit 25953f4286)
+  - PVR: never hide season/episode numbers
+  - PVR: include Season and Episode information in the OSD Topbar
+  - PVR: always hide Episode Name when this matches the Plot
+  - PVR: Season/Episode label adjusted from 'SXXEXX' to 'Season XX Episode XX'
+  - TVRecordings: always hide Episode Names in the list panels
 v2.0.4: Updates for Kodi Leia 18.4
   - Merged changes made to the standard estuary skin between Leia 18.3->18.4 (70c26b3a90)
   - Adjusted the power button menu so that Exit is at the bottom, and Suspend is at the top
