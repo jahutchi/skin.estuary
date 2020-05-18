@@ -1063,3 +1063,15 @@ msgstr ""
 msgctxt "#31549"
 msgid "Untick"
 msgstr ""
+
+#. Connection label in the PVR Seek Bar info
+#: xml/DialogSeekBar.xml
+msgctxt "#31550"
+msgid "Connection"
+msgstr ""
+
+#. Label when checking signal status
+#: xml/DialogSeekBar.xml
+msgctxt "#31551"
+msgid "Checking..."
+msgstr ""
