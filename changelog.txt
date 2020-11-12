@@ -5,6 +5,8 @@ This is a slightly modified version of the default "Estuary" skin.
 Includes customisations related to UK Free-To-Air (FTA) networks (Freeview & Freesat).
 Also includes integration with the script.tvheadend.apiutils addon.
 
+v2.0.7: Updates for Kodi Leia 18.9
+  - Media: added downloading.png and downloaded.png for use on notification popups
 v2.0.6: Updates for Kodi Leia 18.8
   - Merged changes made to the standard estuary skin between Leia 18.5->18.8 (d067114088)
   - Seek Bar: use a PVR-style info bar for Recordings
