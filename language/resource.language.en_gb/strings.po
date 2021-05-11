@@ -1091,3 +1091,15 @@ msgstr ""
 msgctxt "#31548"
 msgid "Delete All Watched"
 msgstr ""
+
+#. Connection label in the PVR Seek Bar info
+#: xml/DialogSeekBar.xml
+msgctxt "#31549"
+msgid "Connection"
+msgstr ""
+
+#. Label when checking signal status
+#: xml/DialogSeekBar.xml
+msgctxt "#31550"
+msgid "Checking..."
+msgstr ""
