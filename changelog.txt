@@ -7,6 +7,8 @@ This is a slightly modified version of the default "Estuary" skin.
 Includes customisations related to UK Free-To-Air (FTA) networks (Freeview & Freesat).
 Also includes integration with the script.tvheadend.apiutils addon.
 
+v3.1.0: Updates from Kodi Matrix 19.1
+  - Merged Matrix 19.1 Estuary changes (upto commit: c06bb00)
 v3.0.0: Initial release for Matrix, based on the standard esturary skin with the following customisations:
   - [MediaMenu]: added extra button to run custom script to check for new videos
   - [InfoSeekBar]: use a PVR-style info bar for PVR Recordings
